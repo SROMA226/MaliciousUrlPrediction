@@ -13,3 +13,11 @@ stages:
     - scripts/extract_features.py
     outs:
     - assets/features
+  train-model:
+    cmd: python scripts/train_model.py
+    deps:
+    - assets/features/train_features.csv
+    - assets/features/train_labels.csv
+    - scripts/train_model.py
+    outs:
+    - assets/models
