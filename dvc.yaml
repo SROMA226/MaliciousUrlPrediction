@@ -1,0 +1,7 @@
+stages:
+  creation-dataset:
+    cmd: python scripts/create_dataset.py
+    deps:
+    - scripts/create_dataset.py
+    outs:
+    - assets/data
