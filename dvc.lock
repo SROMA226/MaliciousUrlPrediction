@@ -11,3 +11,20 @@ stages:
       md5: bb9729b7490b3327179f54168a0bddb8.dir
       size: 45013256
       nfiles: 2
+  extract-feature:
+    cmd: python scripts/extract_features.py
+    deps:
+    - path: assets/data/test.csv
+      md5: 0234cbb96ea07db8239769b9601876bf
+      size: 9018075
+    - path: assets/data/train.csv
+      md5: c300c2ece1bfac6d2b0cb1655e7d86a0
+      size: 35995181
+    - path: scripts/extract_features.py
+      md5: 9e6a1b05ec4e8cb59926e1c4a0e7f672
+      size: 6264
+    outs:
+    - path: assets/features
+      md5: 6e9e272500679bc9c735ec8c8af31976.dir
+      size: 37476708
+      nfiles: 4
