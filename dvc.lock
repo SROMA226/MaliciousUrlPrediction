@@ -45,3 +45,22 @@ stages:
       md5: 8c47bc14188097a3eaca0adb462de5d8.dir
       size: 542444960
       nfiles: 1
+  eval-model:
+    cmd: python scripts/eval_model.py
+    deps:
+    - path: assets/features/test_features.csv
+      md5: b60d3268802d4aef1eb890918ace737c
+      size: 7273948
+    - path: assets/features/test_labels.csv
+      md5: c26f464446e2b9642fdf8f95a3145ea3
+      size: 257983
+    - path: assets/models/model.pk
+      md5: 460fe89a84ac15acaa0ea0960a72c87b
+      size: 542444960
+    - path: scripts/eval_model.py
+      md5: b5ab490a670c604be8ae517af739d435
+      size: 1151
+    outs:
+    - path: assets/metrics.json
+      md5: 22108ceb8bbd179a9715356a6ebc3161
+      size: 137
