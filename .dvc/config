@@ -1,0 +1,4 @@
+[core]
+    remote = dossierdvcdistant
+['remote "dossierdvcdistant"']
+    url = gdrive://1Ax0rzAqVySv8EGdjHYeh3Wbi56Ec1w7S
